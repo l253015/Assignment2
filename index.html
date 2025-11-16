@@ -1,0 +1,164 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Essence</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <ul class="menu">
+        <li class="menu-item"><a href="#">Home</a></li>
+        <li class="menu-item products-dropdown">
+            <a href="#" id="moreproducts">Products</a>
+            <div class="moreperfumes">
+                <div class="product-content">
+                    <h2>Our Products</h2>
+                    <div class="products-grid">
+                        <div class="product-item">
+                            <img src="assets/images/symphony.png" alt="Symphony Perfume">
+                            <p>Symphony</p>
+                        </div>
+                        <div class="product-item">
+                            <img src="assets/images/spellonyou.png" alt="Spell on You Perfume">
+                            <p>Spell on you</p>
+                        </div>
+                        <div class="product-item">
+                            <img src="assets/images/orage.png" alt="Orage Perfume">
+                            <p>Orage</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li class="menu-item"><a href="#">Search</a></li>
+        <li class="menu-item"><a href="#about">About</a></li>
+        <li class="menu-item"><a href="#">Contact</a></li>
+    </ul>
+</body>
+</html>
+
+<h1 id="brandname">Essence</h1>
+<div id="box">
+
+    <img src="assets/images/perfume2.png" alt="Bottle" class="perfume-bottle">
+    <header id="quote">
+        <h1>Own your essence</h1>
+        <p class="subtitle">Find Your Fragrance Match Today</p>
+        <p id="content">
+            At Essence, we believe perfume is more than fragrance—it's identity.
+            Each bottle is a composition of rare ingredients, crafted by expert perfumers to capture emotion, place, and memory.
+            Sustainably sourced. Ethically made. Beautifully bottled.
+        </p>
+
+
+        <a href="#form-popup" id="pre-order">Pre-Order IMAGINATION</a>
+
+
+        <div id="form-popup" class="form">
+            <div class="form-content">
+                <a href="#" class="close-btn">&times;</a>
+                <h3 id="form-heading">Pre-Order</h3>
+                <form>
+                    <input type="text" placeholder="Full Name" required><br>
+                    <input type="email" placeholder="Email" required><br>
+                    <input type="text" placeholder="Address" required><br>
+
+                    <p id="form-questions">What Perfumes have you tried before?</p>
+
+                    <label class="checkbox-item">
+                        <input type="checkbox" name="symphony" value="1">
+                        <span>Symphony</span>
+                    </label>
+
+                    <label class="checkbox-item">
+                        <input type="checkbox" name="spell-on-you" value="1">
+                        <span>Spell On You</span>
+                    </label>
+
+                    <label class="checkbox-item">
+                        <input type="checkbox" name="orage" value="1">
+                        <span>Orage</span>
+                    </label>
+
+                    <p id="bottle-size-question">Select Bottle Size:</p>
+
+                    <label class="radio-item">
+                        <input type="radio" name="bottle-size" value="30ml">
+                        <span>30ml</span>
+                    </label>
+
+                    <label class="radio-item">
+                        <input type="radio" name="bottle-size" value="50ml">
+                        <span>50ml</span>
+                    </label>
+
+                    <label class="radio-item">
+                        <input type="radio" name="bottle-size" value="100ml">
+                        <span>100ml</span>
+                    </label>
+
+                    <p id="occasion-question">Select Occasion:</p>
+
+                    <select name="occasion" class="dropdown-menu">
+                        <option value="">-- Choose an option --</option>
+                        <option value="daily">Daily Wear</option>
+                        <option value="office">Office/Work</option>
+                        <option value="date">Date Night</option>
+                        <option value="party">Party/Event</option>
+                        <option value="special">Special Occasion</option>
+                    </select>
+
+                    <textarea placeholder="Your Message" required></textarea><br>
+                    <button type="submit">Place Order</button><br>
+                </form>
+            </div>
+        </div>
+
+
+    </header>
+</div>
+
+<section>
+    <h3 id="end">About Us</h3>
+    <p id="about">
+        At Essence, we believe fragrance is more than just a scent—it's an extension of who you are.
+        Founded with a passion for timeless elegance and modern sophistication,
+        we craft perfumes that capture the pure essence of luxury. Each bottle is a carefully
+        curated blend of the finest ingredients, designed to leave a lasting impression. Whether
+        you're seeking confidence, romance, or mystery, Essence is your signature in every drop.
+        Discover the art of allure, and let your essence speak for itself.
+    </p>
+</section>
+<article>
+    <h3 id="end">Product Review</h3>
+    <p id="productreview">
+    <p id="stars">
+        ★★★★★
+    </p>
+    <p id="about">
+        "My New Signature Scent"
+        by Emily R.
+        Essence has become my go-to fragrance. It's sophisticated, feminine, and unique—I love
+        that it doesn't smell like everyone else's perfume.
+        The quality is exceptional, and a little goes a long way. This brand truly
+        understands elegance. Worth every penny!
+    </p>
+    <p id="stars">★★★★★</p>
+    <p id="productreview">
+        "Absolutely Stunning"
+        by Sarah M.
+        I've tried countless perfumes, but Essence is in a league of its own. The
+        scent is elegant yet not overpowering—perfect for both day and night. I get compliments
+        everywhere I go, and it lasts all day without fading.
+        The bottle design is gorgeous too, a true luxury experience from start to finish. Highly recommend!
+    </p>
+
+</article>
+<footer id="company-name">
+    <p>&copy; 2025 Essence</p>
+</footer>
+
+
+
+</body>
+</html>

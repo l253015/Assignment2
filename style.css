@@ -1,0 +1,403 @@
+﻿body {
+    background-color: #ffffff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    height: 100%;
+    padding: 0;
+}
+
+
+
+
+#brandname {
+    text-align: center;
+    font-family: 'Times New Roman';
+    color: #2d2d2d;
+    margin: 15px 0 0 0;
+    font-size: 25px;
+    font-weight: 900;
+    letter-spacing: 4px;
+}
+
+
+
+#box {
+    background-color: #e7ebed;
+    width: 100%;
+    min-height: 85vh;
+    margin-top: 15px;
+    position:relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.perfume-bottle {
+    position: absolute;
+    left: 70px; 
+    width: 500px; 
+    height: auto;
+    background:none;
+    background-color:transparent;
+}
+
+#quote {
+    font-family: 'Segoe Script';
+    text-align: left;
+    margin-left: 650px;
+    margin-top: -150px;
+    font-size: 25px;
+    color: #79a9a6;
+    font-weight: 100;
+}
+
+
+
+    #quote h1 {
+        margin: 0 0 10px 0;
+    }
+
+
+
+.subtitle {
+    font-family: 'Times New Roman', Times, serif;
+    color: #131212;
+    font-weight: 100;
+    text-align: left;
+    font-size: 22px;
+    margin: 0 0 15px 0;
+}
+
+
+
+#content {
+    font-size: 15px;
+    font-family: 'Times New Roman';
+    color: black;
+    margin-right: 50px;
+    text-align: left;
+}
+
+
+
+#pre-order {
+    text-decoration:none;
+    background-color: #e7ebed;
+    color: #79a9a6;
+    border: 2px solid #131212;
+    padding: 13px 35px;
+    font-size: 16px;
+    font-family: 'Times New Roman';
+    cursor: pointer;
+    margin-top: 40px;
+}
+#products {
+    font-family: 'Times New Roman';
+    font-size: 20px;
+}
+
+.products-dropdown {
+    position: relative;
+}
+
+.moreperfumes {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: flex-start;
+    overflow-y: auto;
+    padding: 40px 0;
+    z-index: 1000;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease;
+}
+
+.products-dropdown:hover .moreperfumes {
+    display: flex;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.product-content {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 700px;
+    width: 90%;
+    position: relative;
+}
+
+    .product-content h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        font-family: 'Times New Roman';
+        color: #333;
+    }
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.product-item {
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+    .product-item:hover {
+        transform: translateY(-5px);
+    }
+
+    .product-item img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 8px;
+        margin-bottom: 10px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        transition: box-shadow 0.3s ease;
+    }
+
+        .product-item img:hover {
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+        }
+
+    .product-item p {
+        font-family: 'Times New Roman';
+        font-size: 18px;
+        margin: 0;
+        color: #333;
+    }
+
+    #pre-order:hover {
+        background-color: white;
+    }
+
+.menu{
+    display:flex;
+    list-style:none;
+    gap:20px;
+    padding:0;
+    margin-top:15px;
+    margin-left:10px;
+}
+.menu-item {
+    font-family:'Times New Roman';
+    font-size: 20px;
+    font-weight:500;
+    cursor:pointer;
+}
+.menu-item:hover {
+    color: #75a6b7;
+    font-weight:900;
+    
+}
+    .menu-item a {
+        text-decoration: none;
+        color: black;
+        cursor: pointer;
+    }
+
+        .menu-item a:hover {
+            color: #75a6b7; 
+        }
+
+
+#about{
+    font-family:'Times New Roman';
+    font-size:20px;
+   
+}
+#productreview {
+    font-family: 'Times New Roman';
+    font-size: 20px;
+}
+
+
+#end {
+    color: #79a9a6;
+}
+#stars {
+    color: #79a9a6;
+    font-size:large;
+}
+#company-name {
+    color: #79a9a6;
+    font-weight:700;
+}
+#form-heading {
+    color: #79a9a6;
+    font-size:larger;
+    font-family:'Times New Roman';
+    
+
+}
+
+.form {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    
+    justify-content: center;
+    align-items: flex-start; 
+    overflow-y: auto;
+    padding: 40px 0; 
+}
+
+
+.form:target {
+    display: flex;
+}
+
+.form-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 500px;
+    width: 90%;
+    position: relative;
+}
+
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 30px;
+    cursor: pointer;
+    color: #2a2828;
+    text-decoration: none;
+}
+    .close-btn:hover {
+        color: #75a6b7;
+    }
+
+.form-content h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-content form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-content input,
+.form-content textarea {
+    padding: 12px 15px;
+    font-size: 16px;
+    border: 2px solid #131212;
+}
+
+.form-content button {
+    padding :12px 15px;
+    font-size: 16px;
+    background-color: #79a9a6;
+    width:fit-content;
+    align-content:center;
+    align-self:center;
+}
+
+.form-content button:hover {
+    opacity:0.7;
+}
+
+#form-questions {
+    font-family: 'Times New Roman';
+    font-size: 18px;
+    font-weight: bold;
+    color: #79a9a6;
+    margin-bottom: 15px;
+}
+
+.checkbox-item {
+    display: block;
+    font-family: 'Times New Roman';
+    font-size: 16px;
+    color: #79a9a6;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+    .checkbox-item input[type="checkbox"] {
+        margin-right: 8px;
+        cursor: pointer;
+    }
+
+    .checkbox-item span {
+        vertical-align: middle;
+    }
+
+
+#bottle-size-question {
+    font-family: 'Times New Roman';
+    font-size: 18px;
+    font-weight: bold;
+    color: #79a9a6;
+    margin-bottom: 15px;
+}
+
+.radio-item {
+    display: block;
+    font-family: 'Times New Roman';
+    font-size: 16px;
+    color: #79a9a6;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+    .radio-item input[type="radio"] {
+        margin-right: 8px;
+        cursor: pointer;
+    }
+
+    .radio-item span {
+        vertical-align: middle;
+    }
+
+
+#occasion-question {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: #79a9a6;
+    margin-bottom: 15px;
+}
+
+.dropdown-menu {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #79a9a6;
+    padding: 10px 15px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    cursor: pointer;
+    width: 250px;
+}
+
+    .dropdown-menu:hover {
+        border-color: #888;
+    }
+
+    .dropdown-menu:focus {
+        outline: none;
+        border-color: #007bff;
+        box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    }
+
+    
+    .dropdown-menu option {
+        padding: 10px;
+    }
